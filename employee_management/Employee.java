@@ -21,23 +21,42 @@ public class Employee {
         return id;
     }
 
-    public String name() {
+    public String getName() {
         return name;
     }
 
-    public String email() {
+    public String getEmail() {
         return email;
     }
 
-    public String phone() {
+    public String getPhone() {
         return phone;
     }
 
-    public String password() {
+    public String getPassword() {
         return password;
     }
 
     public void setName(String name){
         this.name = name;
     }
+    
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public void setPhone(String phone){
+        this.phone = phone;
+    }
+
+    public void display(){
+        System.out.println("\nEmployee Information");
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+    }
 }
+
+// I initialized the variables id, name, email, phone, password to a private access modifier. Made a constructor in order to access to other methods and class.
+// Get the variable value using the getters class methods and set it and make a setter methods
